@@ -82,7 +82,6 @@ export const search = async (location) => {
 export const searchTomTom = async (query) => {
     try {
         let formatQuery = await encodeURIComponent(query)
-        console.log(formatQuery)
         const geocode = `https://api.tomtom.com/search/2/geocode/${formatQuery}.json?&key=${tomtomApiKey}`
         const res = await fetch(geocode)
         const data = await res.json()

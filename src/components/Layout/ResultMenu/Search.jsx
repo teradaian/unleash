@@ -6,10 +6,10 @@ import Box from '@material-ui/core/Box'
 import TextField from '@material-ui/core/TextField'
 import { useEffect } from 'react'
 import * as searchStyles from './Search.module.css'
+import { LeakAddTwoTone } from '@material-ui/icons'
 
 
 const Search = (props) => {
-
     const [location, setLocation] = useState('')
 
     const handleSubmit = (e) => {
